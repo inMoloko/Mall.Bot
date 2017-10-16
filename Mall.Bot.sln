@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Bot.Api", "Mall.Bot.Api\Mall.Bot.Api.csproj", "{3DE41485-48EF-4A6B-A3E7-34634ED5DC7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Bot.Common", "Mall.Bot.Common\Mall.Bot.Common.csproj", "{F9C7FFF6-EDEF-49F2-8CED-5AE965B985DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mall.Bot.Tests", "Mall.Bot.Tests", "{95E5719B-DAA0-4BD9-8F4C-E52A45D1DFDA}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{8F826839-7F32-4B62-B9FA-95033996D418}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Bot.Test", "Mall.Bot.Tests\Mall.Bot.Test\Mall.Bot.Test.csproj", "{051E190A-D499-41A7-9840-092710911BCD}"
 EndProject
@@ -24,8 +22,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Bot.Api.TelegramTest", "Mall.Bot.Api.TelegramTest\Mall.Bot.Api.TelegramTest.csproj", "{F29B2FBF-75B9-4C8C-9A6B-BAA4692ACB3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Bot.Search", "Mall.Bot.Search\Mall.Bot.Search.csproj", "{F6C54730-9DDA-4A23-A3CA-BF7C3B6CE817}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moloko.Utils", "..\..\Moloko.CommonNew\Moloko.Utils\Moloko.Utils.csproj", "{98FE4717-45E5-4389-BEA5-B1900233B98B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mall.Bot.SenderService", "Mall.Bot.SenderService\Mall.Bot.SenderService.csproj", "{B5E20D37-0BD7-4968-9AB0-8C3411C27BBD}"
 EndProject
@@ -71,10 +67,6 @@ Global
 		{F6C54730-9DDA-4A23-A3CA-BF7C3B6CE817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6C54730-9DDA-4A23-A3CA-BF7C3B6CE817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6C54730-9DDA-4A23-A3CA-BF7C3B6CE817}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98FE4717-45E5-4389-BEA5-B1900233B98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98FE4717-45E5-4389-BEA5-B1900233B98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98FE4717-45E5-4389-BEA5-B1900233B98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98FE4717-45E5-4389-BEA5-B1900233B98B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5E20D37-0BD7-4968-9AB0-8C3411C27BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5E20D37-0BD7-4968-9AB0-8C3411C27BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5E20D37-0BD7-4968-9AB0-8C3411C27BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -89,51 +81,8 @@ Global
 		{CD0540CE-ECC7-437A-AB7A-9578A8F71D2C} = {95E5719B-DAA0-4BD9-8F4C-E52A45D1DFDA}
 		{FAABC8EF-3A4D-464A-910C-B6389067DD6E} = {95E5719B-DAA0-4BD9-8F4C-E52A45D1DFDA}
 		{F29B2FBF-75B9-4C8C-9A6B-BAA4692ACB3A} = {95E5719B-DAA0-4BD9-8F4C-E52A45D1DFDA}
-		{98FE4717-45E5-4389-BEA5-B1900233B98B} = {8F826839-7F32-4B62-B9FA-95033996D418}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 12
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://molokoserver:8080/tfs/development
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Mall.Bot.Api\\Mall.Bot.Api.csproj
-		SccProjectName1 = Mall.Bot.Api
-		SccLocalPath1 = Mall.Bot.Api
-		SccProjectUniqueName2 = Mall.Bot.Common\\Mall.Bot.Common.csproj
-		SccProjectName2 = Mall.Bot.Common
-		SccLocalPath2 = Mall.Bot.Common
-		SccProjectUniqueName3 = Mall.Bot.Tests\\Mall.Bot.Test\\Mall.Bot.Test.csproj
-		SccProjectTopLevelParentUniqueName3 = Mall.Bot.sln
-		SccProjectName3 = Mall.Bot.Tests/Mall.Bot.Test
-		SccLocalPath3 = Mall.Bot.Tests\\Mall.Bot.Test
-		SccProjectUniqueName4 = Mall.Bot.Tests\\Mall.Bot.AutomaticTest\\Mall.Bot.AutomaticTest.csproj
-		SccProjectTopLevelParentUniqueName4 = Mall.Bot.sln
-		SccProjectName4 = Mall.Bot.Tests/Mall.Bot.AutomaticTest
-		SccLocalPath4 = Mall.Bot.Tests\\Mall.Bot.AutomaticTest
-		SccProjectUniqueName5 = Mall.Bot.Tests\\Mall.Bot.AppFabric.Test\\Mall.Bot.AppFabric.Test.csproj
-		SccProjectTopLevelParentUniqueName5 = Mall.Bot.sln
-		SccProjectName5 = Mall.Bot.Tests/Mall.Bot.AppFabric.Test
-		SccLocalPath5 = Mall.Bot.Tests\\Mall.Bot.AppFabric.Test
-		SccProjectUniqueName6 = UpdateMemoryCache\\UpdateMemoryCache.csproj
-		SccProjectName6 = UpdateMemoryCache
-		SccLocalPath6 = UpdateMemoryCache
-		SccProjectUniqueName7 = TestTelegram\\TestTelegram.csproj
-		SccProjectTopLevelParentUniqueName7 = Mall.Bot.sln
-		SccProjectName7 = TestTelegram
-		SccLocalPath7 = TestTelegram
-		SccProjectUniqueName8 = Mall.Bot.Api.TelegramTest\\Mall.Bot.Api.TelegramTest.csproj
-		SccProjectTopLevelParentUniqueName8 = Mall.Bot.sln
-		SccProjectName8 = Mall.Bot.Api.TelegramTest
-		SccLocalPath8 = Mall.Bot.Api.TelegramTest
-		SccProjectUniqueName9 = Mall.Bot.Search\\Mall.Bot.Search.csproj
-		SccProjectName9 = Mall.Bot.Search
-		SccLocalPath9 = Mall.Bot.Search
-		SccProjectUniqueName10 = ..\\..\\Moloko.CommonNew\\Moloko.Utils\\Moloko.Utils.csproj
-		SccProjectTopLevelParentUniqueName10 = Mall.Bot.sln
-		SccProjectName10 = ../../Moloko.CommonNew/Moloko.Utils
-		SccLocalPath10 = ..\\..\\Moloko.CommonNew\\Moloko.Utils
-		SccProjectUniqueName11 = Mall.Bot.SenderService\\Mall.Bot.SenderService.csproj
-		SccProjectName11 = Mall.Bot.SenderService
-		SccLocalPath11 = Mall.Bot.SenderService
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F90DBD2-210A-4C22-BC19-E578BB60C86C}
 	EndGlobalSection
 EndGlobal
