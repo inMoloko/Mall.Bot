@@ -1,0 +1,239 @@
+﻿[
+    [
+        {
+            "Query": "ашаг",
+            "Answer": "Ашан"
+        }
+    ],
+    [
+        {
+            "Query": "ashan",
+            "Answer": "Ашан"
+        }
+    ],
+    [
+        {
+            "Query": "ash",
+            "Answer": "Ash"
+        }
+    ],
+    [
+        {
+            "Query": "as",
+            "Answer": "Ash"
+        }
+    ],
+    [
+        {
+            "Query": "Сполртмастер",
+            "Answer": "Спортмастер"
+        }
+    ],
+    [
+        {
+            "Query": "sportmustir",
+            "Answer": "Спортмастер"
+        }
+    ],
+    [
+        {
+            "Query": "лоцитан",
+            "Answer": "L’Occitane"
+        }
+    ],
+    [
+        {
+            "Query": "locitane",
+            "Answer": "L’Occitane"
+        }
+    ],
+    [
+        {
+            "Query": "locitan",
+            "Answer": "L’Occitane"
+        }
+    ],
+    [
+        {
+            "Query": "стокман",
+            "Answer": "Стокманн"
+        }
+    ],
+    [
+        {
+            "Query": "stkman",
+            "Answer": "Стокманн"
+        }
+    ],
+    [
+        {
+            "Query": "адидас",
+            "Answer": "Adidas Performance"
+        }
+    ],
+    [
+        {
+            "Query": "адибас",
+            "Answer": "Adidas Performance"
+        }
+    ],
+    [
+        {
+            "Query": "абибас",
+            "Answer": "Adidas Performance"
+        }
+    ],
+    [
+        {
+            "Query": "об",
+            "Answer": "Obi"
+        }
+    ],
+    [
+        {
+            "Query": "альба",
+            "Answer": "ALBA"
+        }
+    ],
+    [
+        {
+            "Query": "кальцедония",
+            "Answer": "Calzedonia"
+        }
+    ],
+    [
+        {
+            "Query": "бержка",
+            "Answer": "Bershka"
+        }
+    ],
+    [
+        {
+            "Query": "бургег",
+            "Answer": "Burger King"
+        }
+    ],
+    [
+        {
+            "Query": "чача рум",
+            "Answer": "ЧАЧА room"
+        }
+    ],
+	[
+        {
+            "Query": "михаелла",
+            "Answer": "MICHAELLA"
+        }
+    ],
+	[
+        {
+            "Query": "ньюеркер",
+            "Answer": "New Yorker"
+        }
+    ],
+	[
+        {
+            "Query": "рестор",
+            "Answer": "re:Store"
+        }
+    ],
+	[
+        {
+            "Query": "сбер",
+            "Answer": "Сбербанк"
+        }
+    ],
+	[
+        {
+            "Query": "Виндзор",
+            "Answer": "The Windsor Knot"
+        }
+    ],
+	[
+        {
+            "Query": "вита джус",
+            "Answer": "Vita Juice"
+        }
+    ],
+	[
+        {
+            "Query": "Лаш",
+            "Answer": "LUSH"
+        }
+    ],
+	[
+        {
+            "Query": "гес",
+            "Answer": "GUESS"
+        }
+    ],
+	[
+        {
+            "Query": "киехльс",
+            "Answer": "Kiehl’s"
+        }
+    ],
+	[
+        {
+            "Query": "килс",
+            "Answer": "Kiehl’s"
+        }
+    ],
+	[
+        {
+            "Query": "кихельс",
+            "Answer": "Kiehl’s"
+        }
+    ],
+	[
+        {
+            "Query": "Ив роше",
+            "Answer": "Yves Rocher"
+        }
+    ],
+	[
+        {
+            "Query": "Персона",
+            "Answer": "Имидж-лаборатория Персона"
+        }
+    ],
+	[
+        {
+            "Query": "Привет!",
+        }
+    ],
+	[
+        {
+            "Query": "рлорлод",
+        }
+    ],
+	[
+        {
+            "Query": "час",
+        }
+    ],
+	[
+        {
+            "Query": "найк",
+            "Answer": "Nike"
+        }
+    ],
+	[
+        {
+            "Query": "наик",
+            "Answer": "Nike"
+        }
+    ],
+	[
+		{
+			"Query": "ginza",
+            "Answer": "Двор Помидор (Ginza Project)"
+		}
+	],
+	[
+		{
+			"Query": "ginza",
+            "Answer": "Кукумбер (Ginza Project)"
+		}
+	]
+]

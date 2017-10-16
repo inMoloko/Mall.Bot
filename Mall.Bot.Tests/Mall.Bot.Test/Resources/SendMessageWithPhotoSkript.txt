@@ -1,0 +1,3 @@
+﻿var attachment = "photo-127789119_433026235";
+var sendMessageResult = API.messages.send({"attachment":attachment,"user_id": 35890850, "message": "Pmessage"});
+return ({"result": sendMessageResult});

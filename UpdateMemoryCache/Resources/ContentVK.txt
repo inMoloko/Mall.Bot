@@ -1,0 +1,14 @@
+﻿{
+	"type": "message_new",
+	"object": {
+		"id": 257,
+		"date": %date%,
+		"out": 0,
+		"user_id": 35890850,
+		"read_state": 0,
+		"title": " ... ",
+		"body": "/update"
+	},
+	"group_id": 120366480,
+	"secret": "sdfgsdfgsdfgsdghyk"
+}

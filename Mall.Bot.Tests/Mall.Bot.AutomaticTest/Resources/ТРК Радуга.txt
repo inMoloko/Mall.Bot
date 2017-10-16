@@ -1,0 +1,156 @@
+﻿[
+    [
+        {
+            "Query": "ашаг",
+            "Answer": "Ашан"
+        }
+    ],
+    [
+        {
+            "Query": "ashan",
+            "Answer": "Ашан"
+        }
+    ],
+    [
+        {
+            "Query": "Сполртмастер",
+            "Answer": "Спортмастер"
+        }
+    ],
+    [
+        {
+            "Query": "sportmustir",
+            "Answer": "Спортмастер"
+        }
+    ],
+    [
+        {
+            "Query": "лоцитан",
+            "Answer": "L’Occitane"
+        }
+    ],
+    [
+        {
+            "Query": "locitane",
+            "Answer": "L’Occitane"
+        }
+    ],
+    [
+        {
+            "Query": "locitan",
+            "Answer": "L’Occitane"
+        }
+    ],
+    [
+        {
+            "Query": "об",
+            "Answer": "Obi"
+        }
+    ],
+    [
+        {
+            "Query": "кальцедония",
+            "Answer": "Calzedonia"
+        }
+    ],
+    [
+        {
+            "Query": "бургег",
+            "Answer": "БУРГЕР КИНГ"
+        }
+    ],
+	[
+        {
+            "Query": "сбер",
+            "Answer": "Сбербанк"
+        }
+    ],
+	[
+        {
+            "Query": "Ив роше",
+            "Answer": "Yves Rocher"
+        }
+    ],
+	[
+        {
+            "Query": "Привет!",
+        }
+    ],
+	[
+        {
+            "Query": "рлорлод",
+        }
+    ],
+	[
+		{
+			"Query": "ginza",
+            "Answer": "Двор Помидор (Ginza Project)"
+		}
+	],
+	[
+		{
+			"Query": "ginza",
+            "Answer": "Кукумбер (Ginza Project)"
+		}
+	],
+	[
+		{
+			"Query": "ван клифф",
+            "Answer": "Van Cliff"
+		}
+	],
+	[
+		{
+			"Query": "хо",
+            "Answer": "X.O."
+		}
+	],
+	[
+		{
+			"Query": "x o",
+            "Answer": "X.O."
+		}
+	],
+	[
+		{
+			"Query": "х о",
+            "Answer": "X.O."
+		}
+	],
+	[
+		{
+			"Query": "vipera",
+            "Answer": "Vipera Cosmetics"
+		}
+	],
+	[
+		{
+			"Query": "вайпера",
+            "Answer": "Vipera Cosmetics"
+		}
+	],
+	[
+		{
+			"Query": "випера",
+            "Answer": "Vipera Cosmetics"
+		}
+	],
+	[
+		{
+			"Query": "ажур",
+            "Answer": "A jour"
+		}
+	],
+	[
+		{
+			"Query": "Музетти",
+            "Answer": "Musetti Espresso Mania"
+		}
+	],
+	[
+		{
+			"Query": "семпре капре дием",
+            "Answer": "Sempre Carpe Diem"
+		}
+	]
+]

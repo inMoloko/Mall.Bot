@@ -1,0 +1,20 @@
+{
+	"recipient": {
+		"id": "1102713306494360"
+	},
+	"message": {
+		"attachment": {
+			"type": "image",
+			"payload": {}
+		}
+	},
+	"filedata": 
+		{
+			"Headers":
+				{
+					"Key": "Content-Disposition",
+					"Value":
+						"form-data; name=photo; filename=photo.jpg; filename*=utf-8''photo.jpg"
+				}
+		}
+}

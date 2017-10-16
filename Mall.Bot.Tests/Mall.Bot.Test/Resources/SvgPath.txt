@@ -1,0 +1,9 @@
+﻿var messages = ["Saabdsfdsfd", "Volvosadsd", "BMWasdsd", "kmjnbvc", "qwertfyuj", "opiuytre", "sdfffk", "12346", "123345", "123asdasd345", "12fgdf3345", "12334ewwrr5", "123345dsffsd", "12dsfsd3345", "123345gfhfg", "123dsfdf345", "12asdas3345", "1233dsfdf45", "123dsfdsf345", "123dsfsd345", "12cvb3345", "1bvcd23345", "12cvd3345", "1bv23345", "1233dsfdsf45", "123cvbcv345", "123bnvb345", "12cvbcv3345"];
+var i = 0;
+var sendMessageResult;
+while (i != 9)
+{
+sendMessageResult = API.messages.send({"user_id": 35890850, "message": messages[i]});
+i = i + 1;
+}
+return ({"result": sendMessageResult});

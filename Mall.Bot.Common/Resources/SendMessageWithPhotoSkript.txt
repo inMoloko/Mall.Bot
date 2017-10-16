@@ -1,0 +1,27 @@
+﻿var ids = [Pids];
+var messages = [Pmessages];
+var photos = [Pphotos];
+var hashs = [Phashs];
+var servers = [Pservers];
+var types = [Ptypes];
+
+var sendMessageResult = "hui";
+
+var i = 0;
+
+while (i < Pcount )
+{
+	if (types[i] == 1)
+	{
+		sendMessageResult = API.messages.send({"user_id": ids[i], "message": messages[i]});
+	}
+	else
+	{
+		var saveMessagesResult = API.photos.saveMessagesPhoto({"photo": photos[i],"hash": hashs[i],"server": servers[i]});
+		var attachment = "photo" + saveMessagesResult[0].owner_id + "_" + saveMessagesResult[0].id;
+		sendMessageResult = API.messages.send({"attachment":attachment,"user_id": ids[i], "message": messages[i]});
+	}
+	i = i + 1;
+}
+return ({"result": sendMessageResult});
+
