@@ -65,9 +65,9 @@ namespace Mall.Bot.Common.MallHelpers.Models
             MTerminals = dbContext.MTerminal.Include("TerminalMapObject.MapObject").ToList();
             Synonyms = dbContext.OrganizationSynonym.Where(x => x.Synonyms != null).ToList();
             Categories = dbContext.Category.Where(x => x.IsUsed && x.Name != null && x.CustomerID != null).ToList();
-            Floors = dbContext.Floor.Where(x => x.Paths != null && x.CustomerID != null && x.FileExtension != null).OrderBy(x => x.Number).ToList();
+            Floors = dbContext.Floor.Where(x => x.Paths != null && x.CustomerID != null && x.FileExtension != null && x.Type == null).OrderBy(x => x.Number).ToList();
             Customers = dbContext.Customer.ToList();
-            MapObjects = dbContext.MapObject.Where(x => x.Longitude >= -180 && x.Longitude <= 180 && x.Latitude >= -90 && x.Latitude <= 90).ToList();
+            MapObjects = dbContext.MapObject.Where(x => x.Longitude >= -180 && x.Longitude <= 180 && x.Latitude >= -90 && x.Latitude <= 90 && x.Floor.Type == null).ToList();
             MapObjectLinks = dbContext.MapObjectLink.ToList();
 
             var temp = dbContext.BotCustomersSetting.ToList();

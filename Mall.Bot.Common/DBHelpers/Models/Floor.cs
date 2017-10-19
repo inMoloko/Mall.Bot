@@ -51,6 +51,7 @@ namespace Mall.Bot.Common.DBHelpers.Models
         public string FileExtension { get; set; }
         public int? Width { get; set; }
         public int? Height { get; set; }
+        public int? Type { get; set; }
 
         public void FixPaths ()
         {

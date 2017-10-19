@@ -62,9 +62,9 @@ namespace Mall.Bot.Common.Helpers
                 //cont.Message.Add(mes);
                 //cont.SaveChanges();
                 //TODO Убрать
-#if DEBUG
-                System.IO.File.WriteAllBytes(@"C:\Temp\vk.png", image);
-#endif
+//#if DEBUG
+//                System.IO.File.WriteAllBytes(@"C:\Temp\vk.png", image);
+//#endif
                 Requests.Add(new VKApiRequestModel(ulong.Parse(botUser.BotUserVKID), caption, RequestType.SendMessageWithPhoto, image));
             }
             if (type == SocialNetworkType.Telegram) await telegram.SendPhotoAsync(botUser.BotUserTelegramID, new FileToSend("photo.jpg", new MemoryStream(image)), caption);
