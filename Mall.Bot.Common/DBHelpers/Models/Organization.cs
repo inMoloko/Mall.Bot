@@ -18,8 +18,8 @@ namespace Mall.Bot.Common.DBHelpers.Models
     //[Table("Organizations")]
     public class Organization : IOrganization 
     {
-        [JsonIgnore]
-        public byte [] Logo { get; set; }
+//        [JsonIgnore]
+//        public byte [] Logo { get; set; }
         [JsonIgnore]
         private Color _logoBaseColor;
         /// <summary>
@@ -34,20 +34,15 @@ namespace Mall.Bot.Common.DBHelpers.Models
         [JsonIgnore]
         public string KeyWords { get; set; }
         /// <summary>
-        /// Логотип предпросмотра (1. Высота: 140px, ширина: 140px 2. Соотношение 1:1 2. Форматы: *.png, *.jpg)
-        /// </summary>
-        [JsonIgnore]
-        public byte[] LogoPreview { get; set; }
-        /// <summary>
         /// Координата организации на карте по оси X
         /// </summary>
-        [JsonIgnore]
-        public Nullable<double> Longitude { get; set; }
+        //[JsonIgnore]
+        //public Nullable<double> Longitude { get; set; }
         /// <summary>
         /// Координата организации на карте по оси Y
         /// </summary>
-        [JsonIgnore]
-        public Nullable<double> Latitude { get; set; }
+        //[JsonIgnore]
+        //public Nullable<double> Latitude { get; set; }
         /// <summary>
         /// Признак, является ли организация якорным арендатором
         /// </summary>
@@ -70,33 +65,13 @@ namespace Mall.Bot.Common.DBHelpers.Models
         /// <summary>
         /// Тип организации
         /// </summary>
-        [JsonIgnore]
-        public OrganizationType OrganizationType { get; set; }
+//        [JsonIgnore]
+//        public OrganizationType OrganizationType { get; set; }
         /// <summary>
         /// Категории организации
         /// </summary>
         [JsonIgnore]
         public virtual ICollection<CategoryOrganization> CategoryOrganization { get; set; }
-        /// <summary>
-        /// Координата подписи названия организации на карте по оси X
-        /// </summary>
-        [JsonIgnore]
-        public Nullable<double> SignPointLongitude { get; set; }
-        /// <summary>
-        /// Координата подписи названия организации на карте по оси Y
-        /// </summary>
-        [JsonIgnore]
-        public Nullable<double> SignPointLatitude { get; set; }
-        /// <summary>
-        /// Радиус окружности, в которую будет вписано название
-        /// </summary>
-        [JsonIgnore]
-        public Nullable<double> SignPointRadius { get; set; }
-        /// <summary>
-        /// Выводимое название организации на карте
-        /// </summary>
-        [JsonIgnore]
-        public string SignText { get; set; }
         /// <summary>
         /// Базовый цвет логотипа для использования совместно с логотипом. По умолчанию цвет верхнего левого пикселя логотипа.
         /// </summary>

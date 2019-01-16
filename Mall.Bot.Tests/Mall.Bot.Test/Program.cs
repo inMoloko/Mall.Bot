@@ -1,20 +1,26 @@
-﻿using Mall.Bot.Common.DBHelpers.Models;
+﻿using System;
+using Mall.Bot.Common.DBHelpers.Models;
 using Mall.Bot.Common.Helpers;
 using Moloko.Utils;
 using System.Drawing;
+using System.Linq;
+using Mall.Bot.Common.DBHelpers;
+using Mall.Bot.Search.Mall;
+using Mall.Bot.Search.Models;
 
 namespace Mall.Test
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            Draw();
+            SearchTest();
         }
+
         static void Draw()
         {
-            string path = @"C:\MOLOKO.Backup\Floors\23.png";//ConfigurationManager.AppSettings["ContentPath"] + $"Floors\\{f.FloorID}.{f.FileExtension}";
+            string
+                path = @"C:\MOLOKO.Backup\Floors\23.png"; //ConfigurationManager.AppSettings["ContentPath"] + $"Floors\\{f.FloorID}.{f.FileExtension}";
             int floorID = 23;
             var bitmap = new BitmapSettings(new Bitmap(Image.FromFile(path)), floorID);
             var img = Image.FromFile(@"C:\Git\Mall.Bot\Mall.Bot.Tests\Mall.Bot.Test\Resources\Shop.png");
@@ -46,6 +52,22 @@ namespace Mall.Test
         {
             var trans = new OldMallToNewMallTransformation("A", 3);
             trans.MoveLogoToFileSystem(@"C:\MOLOKO.Backup\Organizations\");
+        }
+
+        private static void SearchTest()
+        {
+            var t = new SearchHelper();
+            string text = "джинсы";
+
+            MallBotContext context = new MallBotContext(@"data source=server.inmoloko.ru,1434\molokoportal;initial catalog=Mall_new2;persist security info=True;user id=sa;password=qwerty1234!!!;multipleactiveresultsets=True;application name=Bot");
+
+            int customerID = 17;
+            var result = t.SearchOrganization(text, 
+                context.Organization.Where(i => i.CustomerID == customerID).ToList().OfType<IOrganization>(),
+                context.Category.Where(i=>i.CustomerID == customerID).ToList().OfType<ICategory>(),
+                context.OrganizationSynonym.ToList().OfType<IOrganizationSynonym>()
+                );
+            Console.WriteLine(result);
         }
     }
 }

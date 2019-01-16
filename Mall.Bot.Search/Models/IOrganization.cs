@@ -23,7 +23,7 @@ namespace Mall.Bot.Search.Models
         string KeyWords { get; set; }
         Nullable<int> CustomerID { get; set; }
         string Name { get; set; }
-        OrganizationType OrganizationType { get; set; }
+        //OrganizationType OrganizationType { get; set; }
         ICollection<ICategoryOrganization> CategoryOrganization { get; set; }
         Nullable<float> Rating { get; set; }
     }

@@ -47,6 +47,8 @@ namespace Mall.Bot.Api.Controllers
                 if (vkResponce.GroupId != 120366480 && vkResponce.GroupId != 127789119)
                 {
                     Logging.Logger.Error($"VK group with ID   {vkResponce.GroupId}  is not supporting by MOLOKO");
+                    result.Content =
+                        new StringContent($"VK group with ID   {vkResponce.GroupId}  is not supporting by MOLOKO");
                     return result;
                 }
 

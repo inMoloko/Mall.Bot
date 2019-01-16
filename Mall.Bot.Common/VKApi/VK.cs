@@ -387,7 +387,7 @@ namespace Mall.Bot.Common.VKApi
                     if (responceString.Contains("error"))
                     {
                         IsError = 1;
-                        Logging.Logger.Error($"VK Api Execute: NOT OK {responceString}" );
+                        Logging.Logger.Error($"VK Api Execute: NOT OK {responceString}, data {data}");
                     }
                 }
             }

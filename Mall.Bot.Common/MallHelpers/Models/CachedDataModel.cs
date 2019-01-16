@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Spatial;
 using System.Linq;
+using Mall.Bot.Search.Models;
 
 namespace Mall.Bot.Common.MallHelpers.Models
 {

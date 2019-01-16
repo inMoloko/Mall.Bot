@@ -5,6 +5,7 @@ using System.Linq;
 using Mall.Bot.Common.DBHelpers.Models;
 using Mall.Bot.Common.MallHelpers.Models;
 using System.Configuration;
+using Mall.Bot.Search.Models;
 
 namespace Mall.Bot.Common.Helpers
 {

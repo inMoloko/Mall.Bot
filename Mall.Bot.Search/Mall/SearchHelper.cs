@@ -222,7 +222,8 @@ namespace Mall.Bot.Search.Mall
         {
             foreach (var item in result)
             {
-                if (organizations.FirstOrDefault(x => x.OrganizationID == item.ID).OrganizationType != OrganizationType.Extra)
+                //if (organizations.FirstOrDefault(x => x.OrganizationID == item.ID).OrganizationType != OrganizationType.Extra)
+                if (organizations.FirstOrDefault(x => x.OrganizationID == item.ID).CategoryOrganization.Any(i=>i.Category.StringID == "extra"))
                     return false;
             }
             return true;

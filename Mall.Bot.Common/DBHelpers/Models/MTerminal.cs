@@ -11,8 +11,6 @@ namespace Mall.Bot.Common.DBHelpers.Models
         public string Name { get; set; }
         [Key]
         public int MTerminalID { get; set; }
-        public int OrganizationID{ get; set; }
-
         /// <summary>
         /// Связь с точками
         /// </summary>

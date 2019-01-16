@@ -10,6 +10,7 @@ using Mall.Bot.Common.MallHelpers.Models;
 using Mall.Bot.Common.DBHelpers.Models;
 using Newtonsoft.Json;
 using System.Configuration;
+using Mall.Bot.Search.Models;
 
 namespace Mall.Bot.Common.Helpers
 {
@@ -320,55 +321,58 @@ namespace Mall.Bot.Common.Helpers
         /// <param name="bitmap"></param>
         public void DrawAllShops(MapHelper.Graph graph, CachedDataModel DataOfBot)
         {
+            //TODO Что это! Почему vyborka = null
             //var vyborka = DataOfBot.Organizations.Where(x => x.Floor != null && x.Floor.Number == graph.Layers[0].LayerID).ToList();
-            List<Organization> vyborka = null;
-            using (var gr = Graphics.FromImage(Bmp))
-            {
-                gr.SmoothingMode = SmoothingMode.HighQuality;
-                gr.CompositingQuality = CompositingQuality.HighQuality;
-                gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
-                int i = 0;
-                foreach (var org in vyborka)
-                {
-                    if (org.Longitude != null && org.Latitude != null)
-                    {
-                        var temp = new System.Windows.Point((double)org.Longitude, (double)org.Latitude);
-
-                        var vertex = graph.Layers[0].GetVertex(temp);
-                        if (vertex == null)
-                        {
-                            int numofsegments = graph.Layers[0].Segments.Count;
-                            graph.Layers[0].AddVertexWithShortestSegment(temp);
-                            if (numofsegments + 1 == graph.Layers[0].Segments.Count)
-                            {
-                                var Addedsegment = graph.Layers[0].Segments[graph.Layers[0].Segments.Count - 1];
-                                gr.DrawLine(new Pen(Color.Green, 10 / ZoomOfPicture),
-                                    (float)(Addedsegment.Vertex0.Point.X) / ZoomOfPicture + I,
-                                    (float)(Addedsegment.Vertex0.Point.Y) / ZoomOfPicture + J,
-                                    (float)(Addedsegment.Vertex1.Point.X) / ZoomOfPicture + I,
-                                    (float)(Addedsegment.Vertex1.Point.Y) / ZoomOfPicture + J);
-
-                                graph.Layers[0].Segments.RemoveAt(graph.Layers[0].Segments.Count - 1);
-                            }
-                            else
-                            {
-                                var Addedsegment = graph.Layers[0].Segments[graph.Layers[0].Segments.Count - 3];
-
-                                gr.DrawLine(new Pen(Color.Green, 10 / ZoomOfPicture),
-                                    (float)(Addedsegment.Vertex0.Point.X) / ZoomOfPicture + I,
-                                    (float)(Addedsegment.Vertex0.Point.Y) / ZoomOfPicture + J,
-                                    (float)(Addedsegment.Vertex1.Point.X) / ZoomOfPicture + I,
-                                    (float)(Addedsegment.Vertex1.Point.Y) / ZoomOfPicture + J);
-
-                                graph.Layers[0].Segments.RemoveAt(graph.Layers[0].Segments.Count - 3);
-                            }
-                            i++;
-                        }
-                        DrawLocation((float)org.Longitude, (float)org.Latitude, "", Properties.Resources.Shop);
-                    }
-                }
-            }
+            
+            //Закоментил потому что Null
+//            List<Organization> vyborka = null;
+//            using (var gr = Graphics.FromImage(Bmp))
+//            {
+//                gr.SmoothingMode = SmoothingMode.HighQuality;
+//                gr.CompositingQuality = CompositingQuality.HighQuality;
+//                gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
+//                gr.PixelOffsetMode = PixelOffsetMode.HighQuality;
+//                int i = 0;
+//                foreach (var org in vyborka)
+//                {
+//                    if (org.Longitude != null && org.Latitude != null)
+//                    {
+//                        var temp = new System.Windows.Point((double)org.Longitude, (double)org.Latitude);
+//
+//                        var vertex = graph.Layers[0].GetVertex(temp);
+//                        if (vertex == null)
+//                        {
+//                            int numofsegments = graph.Layers[0].Segments.Count;
+//                            graph.Layers[0].AddVertexWithShortestSegment(temp);
+//                            if (numofsegments + 1 == graph.Layers[0].Segments.Count)
+//                            {
+//                                var Addedsegment = graph.Layers[0].Segments[graph.Layers[0].Segments.Count - 1];
+//                                gr.DrawLine(new Pen(Color.Green, 10 / ZoomOfPicture),
+//                                    (float)(Addedsegment.Vertex0.Point.X) / ZoomOfPicture + I,
+//                                    (float)(Addedsegment.Vertex0.Point.Y) / ZoomOfPicture + J,
+//                                    (float)(Addedsegment.Vertex1.Point.X) / ZoomOfPicture + I,
+//                                    (float)(Addedsegment.Vertex1.Point.Y) / ZoomOfPicture + J);
+//
+//                                graph.Layers[0].Segments.RemoveAt(graph.Layers[0].Segments.Count - 1);
+//                            }
+//                            else
+//                            {
+//                                var Addedsegment = graph.Layers[0].Segments[graph.Layers[0].Segments.Count - 3];
+//
+//                                gr.DrawLine(new Pen(Color.Green, 10 / ZoomOfPicture),
+//                                    (float)(Addedsegment.Vertex0.Point.X) / ZoomOfPicture + I,
+//                                    (float)(Addedsegment.Vertex0.Point.Y) / ZoomOfPicture + J,
+//                                    (float)(Addedsegment.Vertex1.Point.X) / ZoomOfPicture + I,
+//                                    (float)(Addedsegment.Vertex1.Point.Y) / ZoomOfPicture + J);
+//
+//                                graph.Layers[0].Segments.RemoveAt(graph.Layers[0].Segments.Count - 3);
+//                            }
+//                            i++;
+//                        }
+//                        DrawLocation((float)org.Longitude, (float)org.Latitude, "", Properties.Resources.Shop);
+//                    }
+//                }
+//            }
         }
         /// <summary>
         /// Рисует все пути на карте этажа

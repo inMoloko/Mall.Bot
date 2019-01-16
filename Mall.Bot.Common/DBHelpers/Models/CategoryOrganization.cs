@@ -1,7 +1,7 @@
-﻿using Mall.Bot.Search.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Mall.Bot.Search.Models;
 
 namespace Mall.Bot.Common.DBHelpers.Models
 {
@@ -20,14 +20,18 @@ namespace Mall.Bot.Common.DBHelpers.Models
 
 
 
-    public partial class CategoryOrganization : ICategoryOrganization
+    public class CategoryOrganization : ICategoryOrganization
     {
         [Key, Column(Order = 1)]        
         public int OrganizationID { get; set; }
 
         [Key, Column(Order = 2)]        
         public int CategoryID { get; set; }
+        
         public Category Category { get; set; }
+
+        [NotMapped]
+        ICategory ICategoryOrganization.Category => Category;
 
         public int Something { get; set; }
     }

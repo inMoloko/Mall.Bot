@@ -6,21 +6,7 @@ using System.Windows.Media.Imaging;
 
 namespace Mall.Bot.Common.DBHelpers.Models
 {
-    public enum ServiceCategoryType
-    {
-        /// <summary>
-        /// Есть направление
-        /// </summary>
-        Terminal = 0,
-        /// <summary>
-        /// Связь между этажами
-        /// </summary>
-        Link = 1,
-        /// <summary>
-        /// Сервистный объект отображается ввиде картинки
-        /// </summary>
-        Service = 2
-    }
+   
     /// <summary>
     /// Категория организации
     /// </summary>
